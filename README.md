@@ -30,3 +30,9 @@ cql a.csv select x from a
 7
 8
 ```
+
+## Examples
+
+```
+cql a.csv b.csv "select * from a where a.x = (select x from b where x = 4)"
+```
